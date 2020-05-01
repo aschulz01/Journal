@@ -1,0 +1,50 @@
+[
+    {
+        "children": [
+            {
+                "caption": "Open today's Journal File",
+                "command": "journal",
+                "mnemonic": "J"
+            }
+        ],
+        "id": "file",
+        "mnemonic": "F"
+    },
+    {
+        "caption": "Preferences",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "children": [
+                    {
+                        "caption": "Journal",
+                        "mnemonic": "J",
+                        "children": [
+                            {
+                                "args": {
+                                    "file": "${packages}/Journal/Journal.sublime-settings"
+                                },
+                                "caption": "Settings – Default",
+                                "command": "open_file"
+                            },
+                            {
+                                "args": {
+                                    "file": "${packages}/User/Journal.sublime-settings"
+                                },
+                                "caption": "Settings – User",
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ],
+                "id": "package-settings",
+                "mnemonic": "P"
+            }
+        ],
+        "id": "preferences",
+        "mnemonic": "P"
+    }
+]
