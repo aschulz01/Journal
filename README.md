@@ -14,6 +14,8 @@ The files are structured hierachical by date (year\month\day\yyyymmdd.*extension
   **Example**  
   ```File > Open today's Journal File        Ctrl+Shift+Alt+J``` to open "[journalroot]\2020\05\20200501.md". Save the file.  
 
+3. You can insert an Timestamp into the open text file per STRG+SHIFT+ALT+F12 / STRG+SHIFT+SUPER+F12(Mac) so you can structure your dayfile.
+
 ## Configuration
 By default the journalroot will points to ```~/Documents/Journal```. The default extension is ```.md```. 
 You can change these settings using the following options in your package settings:

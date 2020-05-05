@@ -46,3 +46,7 @@ class JournalCommand(sublime_plugin.WindowCommand):
             
         self.window.open_file(save_path + "/" + time.strftime('%Y%m%d') + getExtension())
 
+class TimestampCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        timestamp = "\n[%s]\t" % (time.strftime("%d.%m.%Y %H:%M:%S")) 
+        self.view.insert(edit, self.view.sel()[0].begin(), timestamp)    
